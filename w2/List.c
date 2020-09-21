@@ -44,8 +44,18 @@ void IntListAppend(IntList L, int v)
 
 int IntListSumIter(IntList L)
 {
-    /* Todo in tutorial :) */
     return 0; 
+}
+
+static bool IntListIsSortedHelper(IntListNode l)
+{
+    // Implement me :)
+    return false;
+}
+
+bool IntListIsSorted(IntList L)
+{
+    return IntListIsSortedHelper(L->first);
 }
 
 // Define the solution of the function with respect to itself.
@@ -71,7 +81,6 @@ static int IntListSumRecHelper(IntListNode l)
 
 int IntListSumRec(IntList L)
 { 
-    /* Todo in tutorial :) */
     return IntListSumRecHelper(L->first);
 }
 

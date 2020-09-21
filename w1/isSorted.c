@@ -17,7 +17,7 @@
 // - return value = a[i] <= a[i + 1] for all i in [0..n - 2]
 bool isSorted(int *a, int n)
 {
-    return false;
+    return true;
 }
 
 int main(int argc, char **argv)
