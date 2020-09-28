@@ -3,7 +3,10 @@
 
 int mypow(int x, unsigned int n)
 {
-    return 1;
+    if (n == 0) return 1;
+    if (n == 1) return x;
+    int p = mypow(x, n/2);
+    return n % 2 ? p*p*x : p*p;
 }
 
 int main(int argc, char **argv)

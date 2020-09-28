@@ -47,10 +47,21 @@ int IntListSumIter(IntList L)
     return 0; 
 }
 
+// precondition
+// postcondition
 static bool IntListIsSortedHelper(IntListNode l)
 {
-    // Implement me :)
-    return false;
+    // Memory:
+    // 
+
+    // Clarity
+
+
+    return l == NULL || l->next == NULL ? true : l->data <= l->next->data && IntListIsSortedHelper(l->next);
+    // if (l == NULL) return true;
+    // if (l->next == NULL) return true;
+    // bool isNeighbourListSorted = IntListIsSortedHelper(l->next);
+    // return l->data <= l->next->data && isNeighbourListSorted;
 }
 
 bool IntListIsSorted(IntList L)
